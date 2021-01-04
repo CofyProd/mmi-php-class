@@ -63,20 +63,28 @@
     ?>
     <h2>Partie 6</h2>
     <?php
-
+    $e = 0;
+    while ($e < $taille_semaine) {
+        echo $e . " : " . $semaine[$e];
+echo '<br>';
+        $e++;
+    }
+    ?>
+    <h2>Partie 7</h2>
+    <?php
     $z = 1;
     do {
         echo $z;
         $z++;
     } while ($z <= 10);
     ?>
-    <h2>Partie 7</h2>
-    <?php
-    // Code
-    ?>
     <h2>Partie 8</h2>
     <?php
-    // Code
+    $num = 0;
+    do {
+        echo "Le jour n°" . $num . " est : " . $semaine[$num] . "<br>";
+        $num++;
+    } while ($num < count($semaine));
     ?>
 </body>
 
